@@ -11,13 +11,20 @@ comments = [
 
     # if the time_ago_in_minutes is more than 60
     if time_ago_in_minutes > 60
-        
         #retun this string
         "more than an hour"
         
+    elsif time_ago_in_minutes == 60
+        "an hour"
+        
+    elsif time_ago_in_minutes <= 1
+        "just a moment ago"
+        
     #if it's less than or equal    
     else
-        
         #return this instead
         "less than an hour"
+    end
 end
+    
+    
